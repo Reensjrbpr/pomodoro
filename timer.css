@@ -12,9 +12,7 @@ body{
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     justify-items: center;
     min-width: 600px;
-    max-width: 600px;
     min-height: 300px;
-    max-height: 300px;
     border: 1px solid black;
 }
 
