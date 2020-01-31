@@ -8,13 +8,25 @@
     <body>
         <h1>Pomodoro Clock</h1>
         <div id="container">
-            <div class="buttons"><h3>Session</h3><p>+</p><p>-</p></div>
-            <div class="buttons"><h3>Break</h3></div>
+            <div>
+                <h3>Session</h3>
+                <p class="add">+</p>
+                <p>25</p>
+                <p class="minus">-</p>
+            </div>
+            <div>
+                <h3>Break</h3>
+                <p class="add">+</p class="add">
+                <p>5</p>
+                <p class="minus">-</p>
+            </div>
             <div class="buttons">Play</div>
             <div class="buttons">Reset</div>
             <div class="buttons">Pause</div>
             <div class="buttons">Stop</div>
+            <p id="timer">25:00</p>
         </div>
+       
         <script src="timer.js"></script>
     </body>
 </html>
