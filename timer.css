@@ -12,6 +12,7 @@ body{
     height: 300px;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     justify-items: center;
+    grid-gap: 20px;
     min-width: 600px;
     min-height: 300px;
     border: 1px solid black;
@@ -45,14 +46,20 @@ p{
     padding-left: 10px;
     padding-right: 10px;
     border: 1px solid black;
+    user-select: none;
 }
 
-.add:hover, .minus:hover{
+.add:hover, .minus:hover, .buttons:hover{
     background-color: gray;
 }
 
 .buttons{
-    line-height: 100px;
+    line-height: 50px;
+    border: 1px solid black;
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    user-select: none;
 }
 
 #timer{
