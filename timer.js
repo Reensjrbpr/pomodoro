@@ -51,3 +51,20 @@ breakMinus.addEventListener('click', () => {
         brk.textContent = breakTime;
     }
 });
+
+//Timer countdown
+const play = document.querySelector('#play');
+
+play.addEventListener('click', () => {
+    let seconds = 59;
+
+    let time = setInterval(function timer(){
+        const timer = document.querySelector('#timer');
+        
+        if(seconds < 10) timer.textContent = `${sessTime - 1}:0${seconds--}`;
+        else timer.textContent = `${sessTime - 1}:${seconds--}`;
+        
+        if(seconds == -1) clearInterval(time);
+    }, 1000);
+});
+
