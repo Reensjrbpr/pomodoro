@@ -64,7 +64,12 @@ play.addEventListener('click', () => {
         if(seconds < 10) timer.textContent = `${sessTime - 1}:0${seconds--}`;
         else timer.textContent = `${sessTime - 1}:${seconds--}`;
         
-        if(seconds == -1) clearInterval(time);
+        if(seconds == -1) {
+            sessTime--;
+            seconds = 59;
+        }
+
+        if(sessTime == -1) clearInterval(time);
     }, 1000);
 });
 
